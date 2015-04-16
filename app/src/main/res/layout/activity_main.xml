@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#8d0090ec">
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:id="@+id/edNombre"
+        android:hint="@string/Nombre"
+        android:autoText="false" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:id="@+id/edTelefono"
+        android:hint="@string/Telefono"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Insertar"
+            android:layout_weight="5"
+            android:id="@+id/btInsertar"
+            android:drawableLeft="@drawable/abc_btn_check_to_on_mtrl_015" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Ver"
+            android:layout_weight="5"
+            android:id="@+id/btVer"
+            android:singleLine="false"
+            android:drawableLeft="@drawable/abc_btn_radio_to_on_mtrl_015" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:id="@+id/edBuscar"
+            android:hint="@string/buscar"/>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/buscar"
+            android:layout_weight="7"
+            android:id="@+id/btnBuscar"
+            android:drawableLeft="@drawable/abc_ic_search_api_mtrl_alpha" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/editar"
+            android:layout_weight="5"
+            android:id="@+id/btnEditar"
+            android:drawableLeft="@drawable/abc_ic_menu_paste_mtrl_am_alpha" />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/eliminar"
+            android:layout_weight="5"
+            android:id="@+id/btnEliminar"
+            android:drawableLeft="@drawable/abc_ic_clear_mtrl_alpha" />
+
+        </LinearLayout>
+
+</LinearLayout>
+
